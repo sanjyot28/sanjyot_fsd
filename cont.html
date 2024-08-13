@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Contact Us</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body, h1, h5 { font-family: "Raleway", sans-serif }
+body, html { height: 100% }
+.background-img {
+  background-image: url('/w3images/onepage_restaurant.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.custom-display-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.custom-display-middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.custom-display-topleft {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  font-size: 24px;
+  text-align: left;
+}
+.custom-display-bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  font-size: 24px;
+}
+.custom-button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  display: block;
+  text-align: left;
+}
+.custom-button:hover {
+  background-color: grey;
+}
+.custom-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+.custom-modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  animation: zoom 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center contents horizontally */
+}
+.custom-modal-header, .custom-modal-footer {
+  background-color: black;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  width: 100%; /* Ensure full width for header and footer */
+}
+@keyframes zoom {
+  from { transform: scale(0) } 
+  to { transform: scale(1) }
+}
+.custom-close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.custom-close:hover,
+.custom-close:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+.custom-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+}
+.custom-container p {
+  text-align: center;
+  margin: 20px 0;
+}
+.custom-container img {
+  display: block;
+  margin: 0 auto 20px auto; /* Adds 20px space below the image */
+  border: 2px solid gray; /* Adds a gray border around the image */
+}
+.custom-input {
+  width: 100%; /* Full width within its container */
+  max-width: 300px; /* Maximum width to fit properly */
+  padding: 12px; /* Adjusted padding */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.custom-padding-16 {
+  padding: 16px;
+}
+.custom-border {
+  border: 1px solid #ccc;
+}
+.custom-button {
+  margin-top: 20px; /* Space above the button */
+}
+</style>
+</head>
+<body>
+    <main>
+                <div class="custom-container">
+                    <p>For more details:</p>
+                    <form action="/action_page.php" target="_blank">
+                        <p><input class="custom-input custom-padding-16 custom-border" type="text" placeholder="Name" required name="Name"></p>
+                        <p><input class="custom-input custom-padding-16 custom-border" type="text" placeholder="Contact Number" required name="ContactNumber"></p>
+                        <p><input class="custom-input custom-padding-16 custom-border" type="text" placeholder="Query" required name="Query"></p>
+
+                        <p><button class="custom-button" type="submit">SEND MESSAGE</button></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+      // JavaScript to open the modal (if not already included)
+      document.querySelector('.custom-button').addEventListener('click', function() {
+        document.getElementById('contact').style.display = 'block';
+      });
+      document.querySelector('.custom-close').addEventListener('click', function() {
+        document.getElementById('contact').style.display = 'none';
+      });
+    </script>
+</body>
+</html>

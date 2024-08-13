@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website for Pune City</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        body,h1,h5 {font-family: "Raleway", sans-serif}
+        body, html {height: 100%}
+        .background-img {
+            background-image: url('/w3images/onepage_restaurant.jpg');
+            min-height: 100%;
+            background-position: center;
+            background-size: cover;
+        }
+        .custom-display-container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .custom-display-middle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .custom-display-topleft {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 20px;
+            font-size: 24px;
+            text-align: left;
+        }
+        .custom-display-bottomleft {
+            position: absolute;
+            color: black;
+            bottom: 0;
+            left: 0;
+            padding: 20px;
+            font-size: 24px;
+        }
+        .custom-button {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 24px;
+            display: block;
+            text-align: left;
+            text-decoration: none; /* Add this line to remove underline from links */
+        }
+        .custom-button:hover {
+            background-color: grey;
+        }
+        .custom-close {
+            color: white;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .custom-close:hover,
+        .custom-close:focus {
+            color: red;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-img custom-display-container">
+        <div class="custom-display-middle w3-jumbo">
+            <img src="abcd.jpg" alt="Pune">
+        </div>
+        <div class="custom-display-topleft custom-xlarge">
+            <p><a href="clg.html" class="custom-button">COLLEGES</a></p>
+            <p><a href="trans.html" class="custom-button">TRANSPORTATION</a></p>
+            <p><a href="histo.html" class="custom-button">HISTORICAL PLACES</a></p>
+            <p><a href="htls.html" class="custom-button">HOTELS</a></p>
+            <p><a href="cont.html" class="custom-button">Contact Us</a></p>
+        </div>   
+        <div class="custom-display-bottomleft custom-xlarge">
+            <p>PUNE CITY</p>
+        </div>
+    </div>
+</body>
+</html>
